@@ -58,8 +58,8 @@ public class LoginTest {
     @Test
     public void testLogin() throws InterruptedException {
         performLogin("***", "***");
-        navigateThroughApp();
         verifyProfileName();
+        navigateThroughApp();
     }
 
     private void performLogin(String email, String password) throws InterruptedException {
